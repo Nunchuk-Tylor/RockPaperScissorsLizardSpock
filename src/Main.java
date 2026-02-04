@@ -20,7 +20,7 @@ public class Main {
         System.out.println("This... Is a game...");
         System.out.println();
         System.out.println();
-        System.out.println("TIBET is the name...");
+        System.out.println("SPRSL is the name...");
         System.out.println();
         System.out.println();
         System.out.println("Now go forth and pick your champion");
