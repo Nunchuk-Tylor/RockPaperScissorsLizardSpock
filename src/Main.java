@@ -28,16 +28,16 @@ public class Main {
 
     public static void playGame(Scanner myInput) {
         boolean guessnow = true;
-        boolean Tot = false;
-        boolean Izzy = false;
-        boolean Emma = false;
-        boolean baby = false;
-        boolean tetra = false;
-        boolean cpuTot = false;
-        boolean cpuIzzy = false;
-        boolean cpuEmma = false;
-        boolean cpubaby = false;
-        boolean cputetra = false;
+        boolean Rock = false;
+        boolean Paper = false;
+        boolean Scissors = false;
+        boolean Lizard = false;
+        boolean Spock = false;
+        boolean cpurock = false;
+        boolean cpupaper = false;
+        boolean cpuScissors = false;
+        boolean cpuLizard = false;
+        boolean cpuspock = false;
         boolean tie = false;
 
         int min = 1;
@@ -47,31 +47,31 @@ public class Main {
         // nextInt((max - min) + 1) + min
         int randomNum = rand.nextInt((max - min) + 1) + min;
 
-        System.out.println("Type words Tot,     Izzy,     Emma,     baby,     or tetra");
+        System.out.println("Type words Rock,     paper,     Scissors,    Lizard,     or Spock");
 
         // Read the actual input string from the scanner
         String userInput = myInput.nextLine().trim().toLowerCase();
 
         do {
-            if (userInput.equals("tot")) {
-                Tot = true;
-                System.out.println("You chose Tot");
+            if (userInput.equals("Rock")) {
+                Rock = true;
+                System.out.println("You chose Rock");
                 guessnow = false;
-            } else if (userInput.equals("izzy")) {
-                Izzy = true;
-                System.out.println("You chose Izzy");
+            } else if (userInput.equals("paper")) {
+                Paper = true;
+                System.out.println("You chose paper");
                 guessnow = false;
-            } else if (userInput.equals("emma")) {
-                Emma = true;
-                System.out.println("You chose Emma");
+            } else if (userInput.equals("Scissors")) {
+                Scissors = true;
+                System.out.println("You chose Scissors");
                 guessnow = false;
-            } else if (userInput.equals("baby")) {
-                baby = true;
-                System.out.println("You chose baby?");
+            } else if (userInput.equals("Lizard")) {
+                Lizard = true;
+                System.out.println("You chose Lizard?");
                 guessnow = false;
-            } else if (userInput.equals("tetra")) {
-                tetra = true;
-                System.out.println("You chose Mexican tetra!!!");
+            } else if (userInput.equals("Spock")) {
+                Spock = true;
+                System.out.println("You chose Mexican Spock!!!");
                 guessnow = false;
             } else {
                 System.out.println("That option is not allowed in TIBET");
@@ -80,32 +80,32 @@ public class Main {
         } while (guessnow);
 
         // Reset all CPU choice flags
-        cpuTot = cpuIzzy = cpuEmma = cpubaby = cputetra = false;
+        cpurock = cpupaper = cpuScissors = cpuLizard = cpuspock = false;
 
         if (randomNum == 1) {
-            cpuTot = true;
-            System.out.println("CPU chose Tot");
+            cpurock = true;
+            System.out.println("CPU chose Rock");
         }
         if (randomNum == 2) {
-            cpuIzzy = true;
-            System.out.println("CPU chose Izzy");
+            cpupaper = true;
+            System.out.println("CPU chose Paper");
         }
         if (randomNum == 3) {
-            cpuEmma = true;
-            System.out.println("CPU chose Emma");
+            cpuScissors = true;
+            System.out.println("CPU chose Scissors");
         }
         if (randomNum == 4) {
-            cpubaby = true;
-            System.out.println("CPU chose baby");
+            cpuLizard = true;
+            System.out.println("CPU chose Lizard");
         }
         if (randomNum == 5) {
-            cputetra = true;
-            System.out.println("CPU chose tetra");
+            cpuspock = true;
+            System.out.println("CPU chose Spock");
         }
 
-        if (cpuTot) {
-            if (Tot) {
-                System.out.println("You both used Tot which created a cannon event where they met and merged into 1");
+        if (cpurock) {
+            if (Rock) {
+                System.out.println("You both used Rock which created a cannon event where they met and merged into 1");
                 System.out.println();
                 System.out.println();
                 System.out.println();
@@ -120,26 +120,26 @@ public class Main {
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
                 tie = true;
-            } else if (Izzy) {
-                System.out.println("izzy wakes up and slams tot in the face with her alarm clock (while it is still ringing)");
+            } else if (Paper) {
+                System.out.println("Paper wakes up and slams Rock in the face with her alarm clock (while it is still ringing)");
                 Naratorsanity++;
                 playerScore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (Emma) {
-                System.out.println("Tot turns Emma into a tree and chops her down using a mechanical beauty blender");
+            } else if (Scissors) {
+                System.out.println("Rock turns Scissors into a tree and chops her down using a mechanical beauty blender");
                 Naratorsanity++;
                 CPUscore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (baby) {
-                System.out.println("Tot waterboards Baby");
+            } else if (Lizard) {
+                System.out.println("Rock waterboards Lizard");
                 Naratorsanity++;
                 CPUscore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (tetra) {
-                System.out.println("tetra delivers tot's child and uses it as a bowling ball to turn dust into dust");
+            } else if (Spock) {
+                System.out.println("Spock delivers Rock's child and uses it as a bowling ball to turn dust into dust");
                 Naratorsanity++;
                 playerScore++;
                 System.out.println("CPU:" +CPUscore);
@@ -147,12 +147,12 @@ public class Main {
             }
         }
 
-        if (cpuIzzy) {
-            if (Tot) {
-                System.out.println("izzy wakes up and slams tot in the face with her alarm clock (while it is still ringing)");
+        if (cpupaper) {
+            if (Rock) {
+                System.out.println("Paper wakes up and slams Rock in the face with her alarm clock (while it is still ringing)");
                 Naratorsanity++;
-            } else if (Izzy) {
-                System.out.println("You both used Izzy causing their hair to tange with each other until their heads colides knocking them both out at the same time. ");
+            } else if (Paper) {
+                System.out.println("You both used Paper causing their hair to tange with each other until their heads colides knocking them both out at the same time. ");
                 System.out.println();
                 System.out.println();
                 System.out.println();
@@ -167,20 +167,20 @@ public class Main {
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
                 tie = true;
-            } else if (Emma) {
-                System.out.println("emma death stares izzy sending her to the spirit realm");
+            } else if (Scissors) {
+                System.out.println("Scissors death stares Paper sending her to the spirit realm");
                 Naratorsanity++;
                 playerScore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (baby) {
-                System.out.println("baby regurgitates radioactive vomit on izzy");
+            } else if (Lizard) {
+                System.out.println("Lizard regurgitates radioactive vomit on Paper");
                 Naratorsanity++;
                 playerScore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (tetra) {
-                System.out.println("izzy teaches tetra the secrets on the deep universe which causes tetra to spontainiously combust");
+            } else if (Spock) {
+                System.out.println("Paper teaches Spock the secrets on the deep universe which causes Spock to spontainiously combust");
                 Naratorsanity++;
                 CPUscore++;
                 System.out.println("CPU:" +CPUscore);
@@ -188,21 +188,21 @@ public class Main {
             }
         }
 
-        if (cpuEmma) {
-            if (Tot) {
-                System.out.println("Tot turns Emma into a tree and chops her down using a mechanical beauty blender");
+        if (cpuScissors) {
+            if (Rock) {
+                System.out.println("Rock turns Scissors into a tree and chops her down using a mechanical beauty blender");
                 Naratorsanity++;
                 playerScore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (Izzy) {
-                System.out.println("emma death stares izzy sending her to the spirit realm");
+            } else if (Paper) {
+                System.out.println("Scissors death stares Paper sending her to the spirit realm");
                 Naratorsanity++;
                 CPUscore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (Emma) {
-                System.out.println("You both used Emma,   they both transmorph into deaformed mentally ill crows ");
+            } else if (Scissors) {
+                System.out.println("You both used Scissors,   they both transmorph into deaformed mentally ill crows ");
                 System.out.println();
                 System.out.println();
                 System.out.println();
@@ -217,14 +217,14 @@ public class Main {
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
                 tie = true;
-            } else if (baby) {
-                System.out.println("emma puts baby in an exaust pipe");
+            } else if (Lizard) {
+                System.out.println("Scissors puts Lizard in an exaust pipe");
                 Naratorsanity++;
                 CPUscore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (tetra) {
-                System.out.println("Tetra plays mindgames with emma");
+            } else if (Spock) {
+                System.out.println("Spock plays mindgames with Scissors");
                 Naratorsanity++;
                 playerScore++;
                 System.out.println("CPU:" +CPUscore);
@@ -232,27 +232,27 @@ public class Main {
             }
         }
 
-        if (cpubaby) {
-            if (Tot) {
-                System.out.println("Tot waterboards Baby");
+        if (cpuLizard) {
+            if (Rock) {
+                System.out.println("Rock waterboards Lizard");
                 Naratorsanity++;
                 playerScore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (Izzy) {
-                System.out.println("baby regurgitates radioactive vomit on izzy");
+            } else if (Paper) {
+                System.out.println("Lizard regurgitates radioactive vomit on Paper");
                 Naratorsanity++;
                 CPUscore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (Emma) {
-                System.out.println("emma puts baby in an exaust pipe");
+            } else if (Scissors) {
+                System.out.println("Scissors puts Lizard in an exaust pipe");
                 Naratorsanity++;
                 playerScore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (baby) {
-                System.out.println("You both used baby,   they drooled so much it flodded the world causing both to drown (slowly and painfully ...) ");
+            } else if (Lizard) {
+                System.out.println("You both used Lizard,   they drooled so much it flodded the world causing both to drown (slowly and painfully ...) ");
                 System.out.println();
                 System.out.println();
                 System.out.println();
@@ -267,8 +267,8 @@ public class Main {
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
                 tie = true;
-            } else if (tetra) {
-                System.out.println("Tetra absorbes the soul of the baby turning it into salt that Elliott uses to season himself");
+            } else if (Spock) {
+                System.out.println("Spock absorbes the soul of the Lizard turning it into salt that Elliott uses to season himself");
                 Naratorsanity++;
                 playerScore++;
                 System.out.println("CPU:" +CPUscore);
@@ -276,33 +276,33 @@ public class Main {
             }
         }
 
-        if (cputetra) {
-            if (Tot) {
-                System.out.println("tetra delivers tot's child and uses it as a bowling ball to turn rock into dust");
+        if (cpuspock) {
+            if (Rock) {
+                System.out.println("Spock delivers Rock's child and uses it as a bowling ball to turn rock into dust");
                 Naratorsanity++;
                 CPUscore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (Izzy) {
-                System.out.println("izzy teaches tetra the secrets on the deep universe which causes tetra to spontainiously combust");
+            } else if (Paper) {
+                System.out.println("Paper teaches Spock the secrets on the deep universe which causes Spock to spontainiously combust");
                 Naratorsanity++;
                 playerScore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (Emma) {
-                System.out.println("Tetra plays mindgames with emma");
+            } else if (Scissors) {
+                System.out.println("Spock plays mindgames with Scissors");
                 Naratorsanity++;
                 CPUscore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (baby) {
-                System.out.println("Tetra absorbes the soul of the baby turning it into salt that Elliott uses to season himself");
+            } else if (Lizard) {
+                System.out.println("Spock absorbes the soul of the Lizard turning it into salt that Elliott uses to season himself");
                 Naratorsanity++;
                 CPUscore++;
                 System.out.println("CPU:" +CPUscore);
                 System.out.println("You:" +playerScore);
-            } else if (tetra) {
-                System.out.println("You both used tetra,   two mexican tetras hide under a costco shelf eat all of the samples and Explode due to over eating");
+            } else if (Spock) {
+                System.out.println("You both used Spock,   two mexican Spocks hide under a costco shelf eat all of the samples and Explode due to over eating");
                 System.out.println();
                 System.out.println();
                 System.out.println();
