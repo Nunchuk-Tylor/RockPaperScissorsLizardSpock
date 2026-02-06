@@ -13,7 +13,6 @@ public class Main {
     private static int winStreak = 0;      // Win Streak of 5/ Win streak of 10
     private static int loseStreak = 0;     // Lose Streak of 10
 
-
     // Game Score
     private static int playerScore = 0;
     private static int cpuScore = 0;
@@ -62,7 +61,7 @@ public class Main {
             System.out.println("--Paper King--");
         }
         if (scissorCount == 20) {
-           System.out.println("You Earned the Achievement for using Scissors 20 times");
+            System.out.println("You Earned the Achievement for using Scissors 20 times");
             System.out.println("--Scissor King--");
         }
         if (rockCount == 20) {
@@ -142,12 +141,12 @@ public class Main {
                 rock = true;
                 System.out.println("You chose Rock");
                 // Display Rock ASCII art
-                System.out.println("    _______");
-                System.out.println("---'   ____)____");
-                System.out.println("          ______)");
-                System.out.println("       __________)");
-                System.out.println("      (____)");
-                System.out.println("---.__(___)");
+                System.out.println("    ___");
+                System.out.println("---'   \\______");
+                System.out.println("   |___(______)");
+                System.out.println("      (_______)");
+                System.out.println("      (_______)");
+                System.out.println("---.__(______)");
                 rockCount++;
                 guessNow = false;
             } else if (userInput.equals("paper")) {
@@ -187,14 +186,14 @@ public class Main {
                 spock = true;
                 System.out.println("You chose Spock");
                 // Display Spock ASCII art
-                System.out.println("    ⌠⌒|");
-                System.out.println(" ⌠⌒⌉| |   ◜﹆◜﹆");
-                System.out.println(" | ||⩧|  / // /");
-                System.out.println(" |_|| | /-//=/");
+                System.out.println("     ⌒ ");
+                System.out.println("  ⌒ | |   ◜﹆◜﹆");
+                System.out.println(" | || |  / // /");
+                System.out.println(" | || | / // /");
                 System.out.println(" | || |/ // /");
                 System.out.println(" ( || | // /");
                 System.out.println(" |         .______");
-                System.out.println(" |         __⫫____)");
+                System.out.println(" |         _______)");
                 System.out.println("  |       |");
                 spockCount++;
                 guessNow = false;
@@ -212,12 +211,12 @@ public class Main {
             cpuRock = true;
             System.out.println("CPU chose Rock");
             // Display Rock ASCII art
-            System.out.println("    _______");
-            System.out.println("---'   ____)____");
-            System.out.println("          ______)");
-            System.out.println("       __________)");
-            System.out.println("      (____)");
-            System.out.println("---.__(___)");
+            System.out.println("    ___");
+            System.out.println("---'   \\______");
+            System.out.println("   |___(______)");
+            System.out.println("      (_______)");
+            System.out.println("      (_______)");
+            System.out.println("---.__(______)");
         }
         if (randomNum == 2) {
             cpuPaper = true;
@@ -253,14 +252,14 @@ public class Main {
             cpuSpock = true;
             System.out.println("CPU chose Spock");
             // Display Spock ASCII art
-            System.out.println("    ⌠⌒|");
-            System.out.println(" ⌠⌒⌉| |   ◜﹆◜﹆");
-            System.out.println(" | ||⩧|  / // /");
-            System.out.println(" |_|| | /-//=/");
+            System.out.println("     ⌒ ");
+            System.out.println("  ⌒ | |   ◜﹆◜﹆");
+            System.out.println(" | || |  / // /");
+            System.out.println(" | || | / // /");
             System.out.println(" | || |/ // /");
             System.out.println(" ( || | // /");
             System.out.println(" |         .______");
-            System.out.println(" |         __⫫____)");
+            System.out.println(" |         _______)");
             System.out.println("  |       |");
         }
         //If Cpu chose Rock
@@ -534,6 +533,7 @@ public class Main {
         // Check if the answer starts with 'Y' or 'y'
         if (answer.length() > 0 && (answer.charAt(0) == 'Y' || answer.charAt(0) == 'y')) {
             playGame(myInput); // Restart the game with same scanner
+
         }
     }
 }
