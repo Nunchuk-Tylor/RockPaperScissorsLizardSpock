@@ -5,7 +5,8 @@ This is a Rock/Paper/Scissors style game where you have five options to choose f
 
 ## How to Run
 1. Start the program
-2. Enter one of these:
+2. Check Acheivements
+3. Enter one of these:
    - rock
    - paper
    - scissors
@@ -15,24 +16,35 @@ This is a Rock/Paper/Scissors style game where you have five options to choose f
 4. Decide to play again or not
 
 ## Game Rules
-- Scissors cuts Paper
-- Paper covers Rock
-- Rock crushes Lizard
-- Lizard poisons Spock
-- Spock smashes Scissors
-- Scissors decapitates Lizard
-- Lizard eats Paper
-- Paper disproves Spock
-- Spock vaporizes Rock
-- Rock crushes Scissors
+- Scissors beats Paper
+- Paper beats Rock
+- Rock beats Lizard
+- Lizard beats Spock
+- Spock beats Scissors
+- Scissors beats Lizard
+- Lizard beats Paper
+- Paper beats Spock
+- Spock beats Rock
+- Rock beats Scissors
+- and two of the same type tie
 
 ## Features
 - Generated variabe to give a CPU choice
+      
+      done by a random number generator
 - Input validation
-- Loop the game
+  - 
+        see what imput is with if statement
+        throw out non matching imputs
+- Loop the game 
+       
+        //playGame(myInput);
 - Clear output
+     
+       Done at the start of each game
 - Score tracking
+  
+        public static int
 - Acheivements
 
-
-# TEST TO MAKE SURE I HAVE ACCESS TO THE README AND AM ABLE TO PUSH CHANGES
+       12 different ones earned while playing
