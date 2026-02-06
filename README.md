@@ -12,7 +12,7 @@ This is a Rock/Paper/Scissors style game where you have five options to choose f
    - scissors
    - lizard
    - spock
-3. Look at results
+3. Look at results (now with ASCII Art)
 4. Decide to play again or not
 
 ## Game Rules
@@ -44,7 +44,7 @@ This is a Rock/Paper/Scissors style game where you have five options to choose f
        Done at the start of each game
 - Score tracking
   
-        public static int
+        using public static int
 - Acheivements
 
        12 different ones earned while playing

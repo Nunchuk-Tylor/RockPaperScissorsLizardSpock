@@ -62,7 +62,7 @@ public class Main {
             System.out.println("--Paper King--");
         }
         if (scissorCount == 20) {
-            System.out.println("You Earned the Achievement for using Scissors 20 times");
+           System.out.println("You Earned the Achievement for using Scissors 20 times");
             System.out.println("--Scissor King--");
         }
         if (rockCount == 20) {
@@ -537,4 +537,3 @@ public class Main {
         }
     }
 }
-
